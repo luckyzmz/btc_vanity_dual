@@ -12,8 +12,8 @@ Private Key (WIF) | Address | Compressed Address | P2SH-P2WPKH
 
 | 类型 | 公钥形式 | 地址前缀 | 长度 |
 |---|---|---|---|
-| **Address**（BTC Uncompressed） | 未压缩公钥 `04\|X\|Y` → hash160 → Base58 | `1` | 34 |
-| **Compressed Address**（BTC Compressed） | 压缩公钥 `02/03\|X` → hash160 → Base58 | `1` | 34 |
+| **Address**（BTC Uncompressed） | 未压缩公钥 `04|X|Y` → hash160 → Base58 | `1` | 34 |
+| **Compressed Address**（BTC Compressed） | 压缩公钥 `02/03|X` → hash160 → Base58 | `1` | 34 |
 | **P2SH-P2WPKH**（嵌套 SegWit） | 压缩公钥 hash160 → redeemScript(`00 14 <h160>`) → scriptHash → Base58(`0x05`) | `3` | 34 |
 
 - **WIF 为 uncompressed 格式（5 开头）**，与 Address 列对应
@@ -71,6 +71,12 @@ HIT(p2sh_p2wpkh) [ 302] "3LcYcFfdNnesH5UJR1PusS4tTcBThA2Jn6" -> P2PKH/P2SH
 
 - `HIT(uncomp)` = 未压缩 P2PKH 地址匹配；`HIT(comp)` = 压缩 P2PKH 匹配；`HIT(p2sh_p2wpkh)` = 嵌套 SegWit 匹配
 - WIF 是 uncompressed（5 开头）；四个值属于同一私钥，WIF 可直接导入钱包恢复
+
+### 真实命中样例（1ucky 前缀）
+
+下面是工具一次实际运行的命中输出（搜索前缀 `1ucky`；同一私钥三型地址任一命中即记录。**图中 Private Key 行已打码遮盖**——真实使用时请勿截图分享未打码的命中输出）：
+
+![工具真实命中输出（1ucky 前缀，私钥已打码）](bitcat-hits-redacted.jpg)
 
 ## 命中自动写文件
 
