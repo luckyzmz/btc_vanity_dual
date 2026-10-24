@@ -1,5 +1,7 @@
 # BTC Triple-Address Vanity Generator（btc_vanity_dual.exe）
 
+> 💖 赞助开发：BTC 赞助地址与社区币 BITCAT (BCT) 的 pump.fun 融资信息见文末「赞助与支持 / Sponsor」章节。
+
 **三型地址版**：随机私钥 → 同时计算 **3 种地址**，全部参与前缀匹配，命中打印：
 
 ```
@@ -108,6 +110,29 @@ HIT(p2sh_p2wpkh) [ 302] "3LcYcFfdNnesH5UJR1PusS4tTcBThA2Jn6" -> P2PKH/P2SH
 - P2SH-P2WPKH `3LcYcFfdNnesH5UJR1PusS4tTcBThA2Jn6`
 
 > 注：正式版每次启动随机起点，上述锚地址只作为算法正确性的历史验证记录；随机序列下首次命中时刻/私钥每次不同属正常。
+
+---
+
+## 赞助与支持 / Sponsor
+
+本工具免费开源。欢迎通过以下两种方式支持作者继续开发：
+
+### 1. 比特币赞助 (BTC Donation)
+
+```
+bc1qt05te48lf7a6qsyurx2ulz8u5qzh5xs6hc7l3z
+```
+
+> 注意：请勿向"正确性验证"章节里的示例地址转账——那是公开种子推导出的测试锚地址，任何人都能算出它的私钥，转过去等于送人。
+
+### 2. pump.fun 社区融资 (BITCAT)
+
+本项目的社区币 **BITCAT (BCT)** 已在 pump.fun 发行，这是本项目的社区融资/赞助渠道：买入或持有 BITCAT 即视为对本项目的赞助，创建者收益将用于本工具的持续开发与算力开销。
+
+- 合约地址 (CA)：`6o2ayvqJZuJh96GV5BJUcb3AwuXbJ5jtzC7pHh3Bpump`
+- 交易页面：https://pump.fun/coin/6o2ayvqJZuJh96GV5BJUcb3AwuXbJ5jtzC7pHh3Bpump
+
+> 风险提示：BITCAT 是社区赞助性质的 meme 币，价格波动剧烈，不构成投资建议，也没有任何收益承诺。请仅在"赞助作者"的前提下，自行决定是否参与。
 
 ## 安全提醒
 
